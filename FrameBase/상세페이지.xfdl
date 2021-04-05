@@ -81,8 +81,10 @@
                           <Column size="80"/>
                         </Columns>
                         <Rows>
-                          <Row band="head" size="24"/>
+                          <Row size="24" band="head"/>
                           <Row size="24"/>
+                          <Row size="24" band="summ"/>
+                          <Row size="24" band="summ"/>
                         </Rows>
                         <Band id="head">
                           <Cell text="품목명"/>
@@ -100,9 +102,18 @@
                           <Cell col="4" text="bind:수량"/>
                           <Cell col="5" text="bind:금액"/>
                         </Band>
+                        <Band id="summary">
+                          <Cell/>
+                          <Cell col="1" colspan="2"/>
+                          <Cell col="3"/>
+                          <Cell col="4" colspan="2"/>
+                          <Cell row="1" colspan="3"/>
+                          <Cell row="1" col="3" colspan="3"/>
+                        </Band>
                       </Format>
                     </Formats>
                   </Grid>
+                  <Button id="Button03" taborder="25" text="조회" left="1109" top="37" width="78" height="38"/>
                 </Layout>
               </Layouts>
             </Tabpage>
